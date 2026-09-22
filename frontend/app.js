@@ -1,6 +1,6 @@
 async function loadMembers() {
     try {
-        const response = await fetch("http://localhost:5000/api/members");
+        const response = await fetch("https://team-availability-tracker-1w8z.onrender.com/api/members");
         const members = await response.json();
 
         const teamList = document.getElementById("team-list");
